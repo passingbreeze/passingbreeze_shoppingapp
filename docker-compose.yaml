@@ -1,0 +1,22 @@
+version: '3'
+services:
+  shoppingapp:
+    image: shoppingapp:latest
+    container_name: shoppingapp
+    ports:
+      - "8080:8080"
+    depends_on:
+      - shoppingapp-db
+  
+  shoppingapp-db:
+    image: amd64/mongo
+    container_name: shoppingapp-db
+    ports:
+      - "27017-27019:27017-27019"
+    environment:
+      - MONGO_INITDB_DATABASE=shoppingapp-db
+      - MONGO_INITDB_ROOT_USERNAME=test
+      - MONGO_INITDB_ROOT_PASSWORD=test
+    volumes:
+      - ./init-mongodb.js:/docker-entrypoint-initdb.d/init-mongodb.js:ro
+      - ./shoppingapp-db-volume:/data/db
