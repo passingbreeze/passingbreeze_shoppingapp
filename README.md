@@ -1,4 +1,4 @@
-# Getting Started with Fastify-CLI [Fastify-CLI](https://www.npmjs.com/package/fastify-cli)
+# Fastify CLI로 만들어보는 쇼핑몰  앱
 This project was bootstrapped with Fastify-CLI.
 
 ## Available Scripts
