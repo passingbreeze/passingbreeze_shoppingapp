@@ -1,15 +1,12 @@
 const { ObjectId } = require('fastify-mongodb')
 
 module.exports = {
-
     readAllClasses: async (mongo) => {
-
         const collection = mongo.db.collection(process.env.COLLECTION_NAME_CLASSES)
         const result = await collection.find({}).toArray()
         return result
     },
     readClassbyName: async (mongo, name)=>{
-        
         const collection = mongo.db.collection(process.env.COLLECTION_NAME_CLASSES)
         const result = await collection.findOne({
             name: name
@@ -17,7 +14,6 @@ module.exports = {
         return result
     },
     readClassbyMajor: async (mongo, major)=>{
-        
         const collection = mongo.db.collection(process.env.COLLECTION_NAME_CLASSES)
         const result = await collection.findOne({
             major: major
