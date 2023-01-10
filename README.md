@@ -14,3 +14,7 @@
 
 ### `npm run test`
 * 미리 정의된 테스트를 실행합니다.
+
+## ERD
+
+![Shoppingapp_ERD](assets/shopping_app_erd.png)
