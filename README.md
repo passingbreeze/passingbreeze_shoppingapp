@@ -1,23 +1,16 @@
 # Fastify CLI로 만들어보는 쇼핑몰  앱
-This project was bootstrapped with Fastify-CLI.
 
-## Available Scripts
+[Fastify-CLI](https://github.com/fastify/fastify-cli)로 만들었습니다.
 
-In the project directory, you can run:
+## 실행 방법
+
+플젝 디렉토리에서
 
 ### `npm run dev`
-
-To start the app in dev mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [http://localhost:3000](http://localhost:3000)에서 dev mode로 서버가 작동합니다.
 
 ### `npm start`
-
-For production mode
+* Production mode로 동작합니다.
 
 ### `npm run test`
-
-Run the test cases.
-
-## Learn More
-
-To learn Fastify, check out the [Fastify documentation](https://www.fastify.io/docs/latest/).
+* 미리 정의된 테스트를 실행합니다.
